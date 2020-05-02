@@ -19,6 +19,8 @@ model = ANN()
 
 model.load_state_dict(torch.load('models/iris_ANN.pt'))
 
+model.eval()
+
 features = ['Sepal Width (cm)', 'Sepal Length (cm)', 'Petal Width (cm)', 'Petal Height (cm)']
 labels = ['Iris setosa','Iris virginica','Iris versicolor','Unknown']
 
